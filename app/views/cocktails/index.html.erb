@@ -1,10 +1,19 @@
+<div class="banner" style="background-image: url('https://static.pexels.com/photos/248427/pexels-photo-248427.jpeg')">
+
 <h1>Cocktailz</h1>
-<%= cl_image_tag("yuanbin_cjszsw",
-      width: 400, height: 300, crop: :fill) %>
-<p>Click on the cocktail for details</p>
+
+</div>
 
 <% @cocktails.each do |cocktail| %>
   <h2><%=link_to cocktail.name, cocktail_path(cocktail) %></h2>
+  <% if cocktail.photo? %>
+    <%= cl_image_tag cocktail.photo.path, width: 300, height: 200, crop: :fill %>
+  <% end %>
 <% end %>
 
+
+
 <p><%=link_to "Add a cocktail", new_cocktail_path, class: "btn btn-primary" %></p>
+
+
+

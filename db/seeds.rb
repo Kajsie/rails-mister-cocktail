@@ -32,6 +32,4 @@ Ingredient.create(name: "chocolate liquor")
 Ingredient.create(name: "lime")
 
 
-Cocktail.create(name: "Mojito")
-Cocktail.create(name: "Caipirinja")
-Cocktail.create(name: "White Russian")
+

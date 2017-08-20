@@ -7,3 +7,10 @@
   color: white;
   text-align: center;
 }
+
+.wrapper {
+  display: flex;
+  width: 1440px;
+  justify-content: center;
+  align-content: space-between;
+}

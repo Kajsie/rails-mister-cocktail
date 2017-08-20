@@ -1,16 +1,15 @@
-.cards-container {
-  margin: 30px;
-  border-radius: 50%;
-}
-
 .cards-container a {
   color: white;
   text-align: center;
+}
+
+.cards-container {
+  margin: 30px;
+  border-radius: 50%;
 }
 
 .wrapper {
   display: flex;
   width: 1440px;
   justify-content: center;
-  align-content: space-between;
 }
